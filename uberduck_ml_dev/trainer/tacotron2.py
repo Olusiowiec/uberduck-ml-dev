@@ -531,7 +531,7 @@ class Tacotron2Trainer(TTSTrainer):
                 print(log_str)
             if epoch % self.epochs_per_checkpoint == 0:
                 self.save_checkpoint(
-                    f"{self.checkpoint_name}_{epoch}",
+                    f"{self.checkpoint_name}",
                     model=model,
                     optimizer=optimizer,
                     iteration=epoch,
